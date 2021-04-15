@@ -1,0 +1,136 @@
+<annotation verified="yes">
+    <folder>Annotation</folder>
+    <filename>can_img48.jpg</filename>
+    <path>robo_images-PascalVOC-export/Annotations/can_img48.jpg</path>
+    <source>
+        <database>Unknown</database>
+    </source>
+    <size>
+        <width>800</width>
+        <height>600</height>
+        <depth>3</depth>
+    </size>
+    <segmented>0</segmented>
+    <object>
+    <name>can</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+        <xmin>58.22034932799258</xmin>
+        <ymin>4.74576141874669</ymin>
+        <xmax>189.74575753939354</xmax>
+        <ymax>244.74577822927702</ymax>
+    </bndbox>
+</object><object>
+    <name>can</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+        <xmin>498.8983154296875</xmin>
+        <ymin>19.66102082850569</ymin>
+        <xmax>648.0509095272776</xmax>
+        <ymax>291.52542372881356</ymax>
+    </bndbox>
+</object><object>
+    <name>can</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+        <xmin>585.67799713652</xmin>
+        <ymin>1.3559309102721133</ymin>
+        <xmax>705.6780281713452</xmax>
+        <ymax>117.96609910867981</ymax>
+    </bndbox>
+</object><object>
+    <name>can</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+        <xmin>235.8474472821769</xmin>
+        <ymin>2.033899598202463</ymin>
+        <xmax>418.898294739804</xmax>
+        <ymax>108.47457627118644</ymax>
+    </bndbox>
+</object><object>
+    <name>can</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+        <xmin>189.06780178264034</xmin>
+        <ymin>113.89831284345206</ymin>
+        <xmax>346.35594254833154</xmax>
+        <ymax>296.27119161314886</ymax>
+    </bndbox>
+</object><object>
+    <name>can</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+        <xmin>233.81358001191737</xmin>
+        <ymin>320.0000051724709</ymin>
+        <xmax>384.3220338983051</xmax>
+        <ymax>515.9321930448888</ymax>
+    </bndbox>
+</object><object>
+    <name>can</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+        <xmin>449.4067693160752</xmin>
+        <ymin>444.06779661016947</ymin>
+        <xmax>593.1356139102224</xmax>
+        <ymax>600</ymax>
+    </bndbox>
+</object><object>
+    <name>can</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+        <xmin>658.2204010527013</xmin>
+        <ymin>330.1694966978946</ymin>
+        <xmax>751.7796403270656</xmax>
+        <ymax>475.9322344246557</ymax>
+    </bndbox>
+</object><object>
+    <name>can</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+        <xmin>111.1017000877251</xmin>
+        <ymin>431.18643033302436</ymin>
+        <xmax>240.59324102886652</xmax>
+        <ymax>587.7966412043168</ymax>
+    </bndbox>
+</object><object>
+    <name>can</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+        <xmin>358.5593530687235</xmin>
+        <ymin>2.7118682861328125</ymin>
+        <xmax>494.15257340770654</xmax>
+        <ymax>258.9830560199285</ymax>
+    </bndbox>
+</object><object>
+    <name>can</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+        <xmin>44.661027294094275</xmin>
+        <ymin>221.69492042670814</ymin>
+        <xmax>115.16948635295284</xmax>
+        <ymax>371.525444418697</ymax>
+    </bndbox>
+</object>
+</annotation>
