@@ -1,0 +1,48 @@
+<annotation verified="yes">
+    <folder>Annotation</folder>
+    <filename>adimg78.jpg</filename>
+    <path>additional_can_images-PascalVOC-export/Annotations/adimg78.jpg</path>
+    <source>
+        <database>Unknown</database>
+    </source>
+    <size>
+        <width>288</width>
+        <height>175</height>
+        <depth>3</depth>
+    </size>
+    <segmented>0</segmented>
+    <object>
+    <name>can</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+        <xmin>13.986754966887418</xmin>
+        <ymin>15.362215909090908</ymin>
+        <xmax>99.81456953642385</xmax>
+        <ymax>157.90767045454544</ymax>
+    </bndbox>
+</object><object>
+    <name>can</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+        <xmin>106.80794701986756</xmin>
+        <ymin>12.816761363636363</ymin>
+        <xmax>188.18543046357615</xmax>
+        <ymax>162.3622159090909</ymax>
+    </bndbox>
+</object><object>
+    <name>can</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+        <xmin>198.35761589403975</xmin>
+        <ymin>14.089488636363637</ymin>
+        <xmax>282.91390728476824</xmax>
+        <ymax>158.54403409090907</ymax>
+    </bndbox>
+</object>
+</annotation>

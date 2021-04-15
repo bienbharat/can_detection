@@ -1,0 +1,26 @@
+<annotation verified="yes">
+    <folder>Annotation</folder>
+    <filename>adimg81.jpg</filename>
+    <path>additional_can_images-PascalVOC-export/Annotations/adimg81.jpg</path>
+    <source>
+        <database>Unknown</database>
+    </source>
+    <size>
+        <width>225</width>
+        <height>225</height>
+        <depth>3</depth>
+    </size>
+    <segmented>0</segmented>
+    <object>
+    <name>can</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+        <xmin>0.4966887417218543</xmin>
+        <ymin>1.4900662251655628</ymin>
+        <xmax>220.03311258278143</xmax>
+        <ymax>221.02649006622514</ymax>
+    </bndbox>
+</object>
+</annotation>

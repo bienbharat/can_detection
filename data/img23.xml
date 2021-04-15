@@ -1,0 +1,26 @@
+<annotation verified="yes">
+    <folder>Annotation</folder>
+    <filename>img23.jpg</filename>
+    <path>robo_images-PascalVOC-export/Annotations/img23.jpg</path>
+    <source>
+        <database>Unknown</database>
+    </source>
+    <size>
+        <width>600</width>
+        <height>450</height>
+        <depth>3</depth>
+    </size>
+    <segmented>0</segmented>
+    <object>
+    <name>can</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+        <xmin>159.34322809768935</xmin>
+        <ymin>3.0508493973036943</ymin>
+        <xmax>439.51271186440675</xmax>
+        <ymax>393.0508629750397</ymax>
+    </bndbox>
+</object>
+</annotation>

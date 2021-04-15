@@ -1,0 +1,26 @@
+<annotation verified="yes">
+    <folder>Annotation</folder>
+    <filename>can_img365.jpg</filename>
+    <path>robo_images-PascalVOC-export/Annotations/can_img365.jpg</path>
+    <source>
+        <database>Unknown</database>
+    </source>
+    <size>
+        <width>800</width>
+        <height>600</height>
+        <depth>3</depth>
+    </size>
+    <segmented>0</segmented>
+    <object>
+    <name>can</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+        <xmin>0.5932306839247881</xmin>
+        <ymin>226.44068831104343</ymin>
+        <xmax>446.01693880760064</xmax>
+        <ymax>526.1016845703125</ymax>
+    </bndbox>
+</object>
+</annotation>
