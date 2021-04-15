@@ -27,7 +27,7 @@ interactions, and unifies the strengths of linearity of MF and non-linearity of
 MLP for modeling the user-item latent structures.
 
 In NeuMF model, it allows GMF and MLP to learn separate embeddings, and combine
-the two models by concatenating their last hidden layer.
+the two model by concatenating their last hidden layer.
 """
 from __future__ import absolute_import
 from __future__ import division

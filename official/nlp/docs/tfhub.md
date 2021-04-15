@@ -73,7 +73,7 @@ encoder_inputs = dict(
 encoder_outputs = encoder(encoder_inputs)
 assert encoder_outputs.keys() == {
   "pooled_output",    # Shape [batch_size, width], dtype=float32
-  "default",          # Alias for "pooled_output" (aligns with other models)
+  "default",          # Alias for "pooled_output" (aligns with other model)
   "sequence_output",  # Shape [batch_size, seq_length, width], dtype=float32
   "encoder_outputs",  # List of Tensors with outputs of all transformer layers
 }

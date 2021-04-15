@@ -191,12 +191,12 @@ def export_tflite_graph(pipeline_config,
       Additional tensors are appended to the end of output tensor list.
 
   Raises:
-    ValueError: if the pipeline config contains models other than ssd or uses an
+    ValueError: if the pipeline config contains model other than ssd or uses an
       fixed_shape_resizer and provides a shape as well.
   """
   tf.gfile.MakeDirs(output_dir)
   if pipeline_config.model.WhichOneof('model') != 'ssd':
-    raise ValueError('Only ssd models are supported in tflite. '
+    raise ValueError('Only ssd model are supported in tflite. '
                      'Found {} in config'.format(
                          pipeline_config.model.WhichOneof('model')))
 

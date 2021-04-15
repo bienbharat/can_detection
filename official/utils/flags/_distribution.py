@@ -38,7 +38,7 @@ def define_distribution(worker_hosts=True, task_index=True):
         default=None,
         help=help_wrap(
             'Comma-separated list of worker ip:port pairs for running '
-            'multi-worker models with DistributionStrategy.  The user would '
+            'multi-worker model with DistributionStrategy.  The user would '
             'start the program on each host with identical value for this '
             'flag.'))
 

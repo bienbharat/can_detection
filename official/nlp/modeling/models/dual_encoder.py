@@ -12,7 +12,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-"""Trainer network for dual encoder style models."""
+"""Trainer network for dual encoder style model."""
 # pylint: disable=g-classes-have-attributes
 import collections
 import tensorflow as tf

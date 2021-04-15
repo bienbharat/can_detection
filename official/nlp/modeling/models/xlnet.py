@@ -12,7 +12,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-"""XLNet models."""
+"""XLNet model."""
 # pylint: disable=g-classes-have-attributes
 
 from typing import Any, Mapping, Union

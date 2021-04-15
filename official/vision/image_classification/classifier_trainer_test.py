@@ -13,7 +13,7 @@
 # limitations under the License.
 
 # Lint as: python3
-"""Unit tests for the classifier trainer models."""
+"""Unit tests for the classifier trainer model."""
 
 from __future__ import absolute_import
 from __future__ import division
@@ -108,7 +108,7 @@ def run_end_to_end(main: Callable[[Any], None],
 
 
 class ClassifierTest(tf.test.TestCase, parameterized.TestCase):
-  """Unit tests for Keras models."""
+  """Unit tests for Keras model."""
   _tempdir = None
 
   @classmethod
@@ -121,7 +121,7 @@ class ClassifierTest(tf.test.TestCase, parameterized.TestCase):
 
   @combinations.generate(distribution_strategy_combinations())
   def test_end_to_end_train_and_eval(self, distribution, model, dataset):
-    """Test train_and_eval and export for Keras classifier models."""
+    """Test train_and_eval and export for Keras classifier model."""
     # Some parameters are not defined as flags (e.g. cannot run
     # classifier_train.py --batch_size=...) by design, so use
     # "--params_override=..." instead
@@ -154,7 +154,7 @@ class ClassifierTest(tf.test.TestCase, parameterized.TestCase):
           dtype='float16',
       ))
   def test_gpu_train(self, distribution, model, dataset, dtype):
-    """Test train_and_eval and export for Keras classifier models."""
+    """Test train_and_eval and export for Keras classifier model."""
     # Some parameters are not defined as flags (e.g. cannot run
     # classifier_train.py --batch_size=...) by design, so use
     # "--params_override=..." instead
@@ -198,7 +198,7 @@ class ClassifierTest(tf.test.TestCase, parameterized.TestCase):
           dtype='bfloat16',
       ))
   def test_tpu_train(self, distribution, model, dataset, dtype):
-    """Test train_and_eval and export for Keras classifier models."""
+    """Test train_and_eval and export for Keras classifier model."""
     # Some parameters are not defined as flags (e.g. cannot run
     # classifier_train.py --batch_size=...) by design, so use
     # "--params_override=..." instead

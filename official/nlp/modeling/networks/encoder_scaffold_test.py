@@ -467,10 +467,10 @@ class EncoderScaffoldEmbeddingNetworkTest(keras_parameterized.TestCase):
     data, pooled = test_network([word_ids, mask])
     model = tf.keras.Model([word_ids, mask], [data, pooled])
 
-    # Copy the weights between models.
+    # Copy the weights between model.
     new_model.set_weights(model.get_weights())
 
-    # Invoke the models.
+    # Invoke the model.
     batch_size = 3
     word_id_data = np.random.randint(
         vocab_size, size=(batch_size, sequence_length))
@@ -627,10 +627,10 @@ class EncoderScaffoldHiddenInstanceTest(keras_parameterized.TestCase):
     data, pooled = test_network([word_ids, mask, type_ids])
     model = tf.keras.Model([word_ids, mask, type_ids], [data, pooled])
 
-    # Copy the weights between models.
+    # Copy the weights between model.
     new_model.set_weights(model.get_weights())
 
-    # Invoke the models.
+    # Invoke the model.
     batch_size = 3
     word_id_data = np.random.randint(
         vocab_size, size=(batch_size, sequence_length))

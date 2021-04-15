@@ -14,13 +14,13 @@
 # ==============================================================================
 """Abstract detection model.
 
-This file defines a generic base class for detection models.  Programs that are
-designed to work with arbitrary detection models should only depend on this
+This file defines a generic base class for detection model.  Programs that are
+designed to work with arbitrary detection model should only depend on this
 class.  We intend for the functions in this class to follow tensor-in/tensor-out
 design, thus all functions have tensors or lists/dictionaries holding tensors as
 inputs and outputs.
 
-Abstractly, detection models predict output tensors given input images
+Abstractly, detection model predict output tensors given input images
 which can be passed to a loss function at training time or passed to a
 postprocessing function at eval time.  The computation graphs at a high level
 consequently look as follows:
@@ -65,7 +65,7 @@ import tensorflow.compat.v1 as tf
 from object_detection.core import standard_fields as fields
 
 
-# If using a new enough version of TensorFlow, detection models should be a
+# If using a new enough version of TensorFlow, detection model should be a
 # tf module or keras model for tracking.
 try:
   _BaseClass = tf.keras.layers.Layer
@@ -74,7 +74,7 @@ except AttributeError:
 
 
 class DetectionModel(six.with_metaclass(abc.ABCMeta, _BaseClass)):
-  """Abstract base class for detection models.
+  """Abstract base class for detection model.
 
   Extends tf.Module to guarantee variable tracking.
   """
@@ -138,8 +138,8 @@ class DetectionModel(six.with_metaclass(abc.ABCMeta, _BaseClass)):
 
     This placeholder method provides a way for a meta-architecture to specify
     how to grab additional side inputs from input features (in addition to the
-    image itself) and allows models to depend on contextual information.  By
-    default, detection models do not use side information (and thus this method
+    image itself) and allows model to depend on contextual information.  By
+    default, detection model do not use side information (and thus this method
     returns an empty dictionary by default.  However it can be overridden if
     side inputs are necessary."
 
@@ -517,8 +517,8 @@ class DetectionModel(six.with_metaclass(abc.ABCMeta, _BaseClass)):
     the num_classes parameter.
 
     Note that this function is intended to be used to restore Keras-based
-    models when running Tensorflow 2, whereas restore_map (above) is intended
-    to be used to restore Slim-based models when running Tensorflow 1.x.
+    model when running Tensorflow 2, whereas restore_map (above) is intended
+    to be used to restore Slim-based model when running Tensorflow 1.x.
 
     TODO(jonathanhuang,rathodv): Check tf_version and raise unimplemented
     error for both restore_map and restore_from_objects depending on version.

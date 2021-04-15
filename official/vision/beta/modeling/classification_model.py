@@ -12,7 +12,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-"""Build classification models."""
+"""Build classification model."""
 
 from typing import Any, Mapping, Optional
 # Import libraries

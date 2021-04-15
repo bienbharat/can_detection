@@ -12,7 +12,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-"""Trainer network for ELECTRA models."""
+"""Trainer network for ELECTRA model."""
 # pylint: disable=g-classes-have-attributes
 
 import copy
@@ -31,7 +31,7 @@ class ElectraPretrainer(tf.keras.Model):
   Pre-training Text Encoders as Discriminators Rather Than Generators" (
   https://arxiv.org/abs/2003.10555).
 
-  The ElectraPretrainer allows a user to pass in two transformer models, one for
+  The ElectraPretrainer allows a user to pass in two transformer model, one for
   generator, the other for discriminator, and instantiates the masked language
   model (at generator side) and classification networks (at discriminator side)
   that are used to create the training objectives.

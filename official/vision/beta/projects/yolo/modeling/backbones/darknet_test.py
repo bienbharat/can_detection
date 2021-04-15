@@ -34,7 +34,7 @@ class DarkNetTest(parameterized.TestCase, tf.test.TestCase):
   )
   def test_network_creation(self, input_size, model_id,
                             endpoint_filter_scale, scale_final):
-    """Test creation of ResNet family models."""
+    """Test creation of ResNet family model."""
     tf.keras.backend.set_image_data_format("channels_last")
 
     network = darknet.Darknet(model_id=model_id, min_level=3, max_level=5)

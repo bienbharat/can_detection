@@ -29,7 +29,7 @@ approximate detections with no associated class information).  In the latter
 setting, proposals are computed, then passed through a second stage
 "box classifier" to yield (multi-class) detections.
 
-Implementations of R-FCN models must define a new FasterRCNNFeatureExtractor and
+Implementations of R-FCN model must define a new FasterRCNNFeatureExtractor and
 override three methods: `preprocess`, `_extract_proposal_features` (the first
 stage of the model), and `_extract_box_classifier_features` (the second stage of
 the model). Optionally, the `restore_fn` method can be overridden.  See tests

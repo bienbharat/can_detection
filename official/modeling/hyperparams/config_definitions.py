@@ -20,8 +20,8 @@ from official.core.config_definitions import *
 from official.modeling.hyperparams import base_config
 
 
-# TODO(hongkuny): These configs are used in models that are going to deprecate.
-# Once those models are removed, we should delete this file to avoid confusion.
+# TODO(hongkuny): These configs are used in model that are going to deprecate.
+# Once those model are removed, we should delete this file to avoid confusion.
 # Users should not use this file anymore.
 @dataclasses.dataclass
 class TensorboardConfig(base_config.Config):

@@ -12,7 +12,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-"""IOU Metrics used for semantic segmentation models."""
+"""IOU Metrics used for semantic segmentation model."""
 
 import numpy as np
 import tensorflow as tf

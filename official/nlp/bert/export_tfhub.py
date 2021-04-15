@@ -14,7 +14,7 @@
 
 """A script to export BERT as a TF-Hub SavedModel.
 
-This script is **DEPRECATED** for exporting BERT encoder models;
+This script is **DEPRECATED** for exporting BERT encoder model;
 see the error message in by main() for details.
 """
 
@@ -119,7 +119,7 @@ def main(_):
   if FLAGS.model_type == "encoder":
     deprecation_note = (
         "nlp/bert/export_tfhub is **DEPRECATED** for exporting BERT encoder "
-        "models. Please switch to nlp/tools/export_tfhub for exporting BERT "
+        "model. Please switch to nlp/tools/export_tfhub for exporting BERT "
         "(and other) encoders with dict inputs/outputs conforming to "
         "https://www.tensorflow.org/hub/common_saved_model_apis/text#transformer-encoders"
     )

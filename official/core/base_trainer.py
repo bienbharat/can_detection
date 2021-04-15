@@ -170,7 +170,7 @@ def get_runtime_options(config: ExperimentConfig):
 
 @gin.configurable
 class Trainer(_AsyncTrainer):
-  """Implements the common trainer shared for TensorFlow models."""
+  """Implements the common trainer shared for TensorFlow model."""
 
   # pylint: disable=super-init-not-called
   def __init__(self,
@@ -181,7 +181,7 @@ class Trainer(_AsyncTrainer):
                train: bool = True,
                evaluate: bool = True,
                checkpoint_exporter=None):
-    """Initialize common trainer for TensorFlow models.
+    """Initialize common trainer for TensorFlow model.
 
     Args:
       config: An `ExperimentConfig` instance specifying experiment config.

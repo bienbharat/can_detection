@@ -419,7 +419,7 @@ class TransformerLayerTest(keras_parameterized.TestCase):
     # ensure that we can serialize this layer to disk.
     serialized_data = model.get_config()
 
-    # Create a new model from the old config, and copy the weights. These models
+    # Create a new model from the old config, and copy the weights. These model
     # should have identical outputs.
     new_model = tf.keras.Model.from_config(serialized_data)
     new_model.set_weights(model.get_weights())
@@ -482,7 +482,7 @@ class TransformerLayerTest(keras_parameterized.TestCase):
     pre_serialization_output = model.predict([input_data, mask_data])
 
     serialized_data = model.get_config()
-    # Create a new model from the old config, and copy the weights. These models
+    # Create a new model from the old config, and copy the weights. These model
     # should have identical outputs.
     new_model = tf.keras.Model.from_config(serialized_data)
     new_model.set_weights(model.get_weights())

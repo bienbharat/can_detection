@@ -12,7 +12,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-"""Miscellaneous functions that can be called by models."""
+"""Miscellaneous functions that can be called by model."""
 
 import numbers
 

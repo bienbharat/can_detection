@@ -115,7 +115,7 @@ def build_block_specs(block_specs=None):
 
 @tf.keras.utils.register_keras_serializable(package='Vision')
 class SpineNet(tf.keras.Model):
-  """Class to build SpineNet models."""
+  """Class to build SpineNet model."""
 
   def __init__(self,
                input_specs=tf.keras.layers.InputSpec(shape=[None, 640, 640, 3]),

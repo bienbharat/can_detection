@@ -105,7 +105,7 @@ class MobileNetTest(parameterized.TestCase, tf.test.TestCase):
       ))
   def test_mobilenet_creation(self, model_id,
                               input_size):
-    """Test creation of MobileNet family models."""
+    """Test creation of MobileNet family model."""
     tf.keras.backend.set_image_data_format('channels_last')
 
     mobilenet_layers = {

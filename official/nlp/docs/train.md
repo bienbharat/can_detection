@@ -27,7 +27,7 @@ multiple Yaml files provided by `--config_file` FLAG. For example:
 
 ```shell
 --config_file=configs/experiments/glue_mnli_matched.yaml \
---config_file=configs/models/bert_en_uncased_base.yaml
+--config_file=configs/model/bert_en_uncased_base.yaml
 ```
 
 In addition, experiment configuration can be further overriden by
@@ -54,7 +54,7 @@ and then install Model Garden and required dependencies:
 
 ```shell
 git clone https://github.com/tensorflow/models.git
-export PYTHONPATH=$PYTHONPATH:/path/to/models
+export PYTHONPATH=$PYTHONPATH:/path/to/model
 pip3 install --user -r official/requirements.txt
 ```
 
@@ -98,7 +98,7 @@ job.
 export INPUT_DATA_DIR=gs://some_bucket/datasets
 export OUTPUT_DIR=gs://some_bucket/my_output_dir
 
-# See tfhub BERT collection for more tfhub models:
+# See tfhub BERT collection for more tfhub model:
 # https://tfhub.dev/google/collections/bert/1
 export BERT_HUB_URL=https://tfhub.dev/tensorflow/bert_en_uncased_L-12_H-768_A-12/3
 

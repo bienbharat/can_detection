@@ -12,7 +12,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-"""A light weight utilities to train NLP models."""
+"""A light weight utilities to train NLP model."""
 
 import json
 import os

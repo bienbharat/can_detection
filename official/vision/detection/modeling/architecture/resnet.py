@@ -287,7 +287,7 @@ class Resnet(object):
     return tf.identity(inputs, name)
 
   def resnet_v1_generator(self, block_fn, layers):
-    """Generator for ResNet v1 models.
+    """Generator for ResNet v1 model.
 
     Args:
       block_fn: `function` for the block to use within the model. Either

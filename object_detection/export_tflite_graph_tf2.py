@@ -26,7 +26,7 @@ One input:
   image: a float32 tensor of shape[1, height, width, 3] containing the
   *normalized* input image.
   NOTE: See the `preprocess` function defined in the feature extractor class
-  in the object_detection/models directory.
+  in the object_detection/model directory.
 
 Four Outputs:
   detection_boxes: a float32 tensor of shape [1, num_boxes, 4] with box

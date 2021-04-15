@@ -13,7 +13,7 @@
 # limitations under the License.
 # ==============================================================================
 
-"""Test utility functions for manipulating Keras models."""
+"""Test utility functions for manipulating Keras model."""
 
 from __future__ import absolute_import
 from __future__ import division

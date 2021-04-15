@@ -13,7 +13,7 @@
 # limitations under the License.
 
 # Lint as: python3
-"""Tests for RetinaNet models."""
+"""Tests for RetinaNet model."""
 
 # Import libraries
 from absl.testing import parameterized

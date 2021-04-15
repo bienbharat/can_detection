@@ -52,7 +52,7 @@ model_checkpoint_path = ...
 
 bert_config = model_utils.BertConfig.from_json_file(bert_config_file)
 
-# `pretrainer` is an instance of `nlp.modeling.models.BertPretrainerV2`.
+# `pretrainer` is an instance of `nlp.modeling.model.BertPretrainerV2`.
 pretrainer = model_utils.create_mobilebert_pretrainer(bert_config)
 checkpoint = tf.train.Checkpoint(**pretrainer.checkpoint_items)
 checkpoint.restore(model_checkpoint_path).assert_existing_objects_matched()

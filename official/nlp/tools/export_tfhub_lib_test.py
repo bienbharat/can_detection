@@ -95,7 +95,7 @@ class ExportModelTest(tf.test.TestCase, parameterized.TestCase):
 
   This covers export from an Encoder checkpoint to a SavedModel without
   the .mlm subobject. This is no longer preferred, but still useful
-    for models like Electra that are trained without the MLM task.
+    for model like Electra that are trained without the MLM task.
 
   The export code is generic. This test focuses on two main cases
   (the most important ones in practice when this was written in 2020):

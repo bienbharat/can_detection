@@ -14,7 +14,7 @@
 
 """Networks are combinations of `tf.keras` layers (and possibly other networks).
 
-They are `tf.keras` models that would not be trained alone. It encapsulates
+They are `tf.keras` model that would not be trained alone. It encapsulates
 common network structures like a transformer encoder into an easily
 handled object with a standardized configuration.
 """

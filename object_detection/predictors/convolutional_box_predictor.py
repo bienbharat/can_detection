@@ -132,7 +132,7 @@ class ConvolutionalBoxPredictor(box_predictor.BoxPredictor):
     for head_name in self._other_heads.keys():
       predictions[head_name] = []
     # TODO(rathodv): Come up with a better way to generate scope names
-    # in box predictor once we have time to retrain all models in the zoo.
+    # in box predictor once we have time to retrain all model in the zoo.
     # The following lines create scope names to be backwards compatible with the
     # existing checkpoints.
     box_predictor_scopes = [_NoopVariableScope()]

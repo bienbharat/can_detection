@@ -13,7 +13,7 @@
 # limitations under the License.
 # ==============================================================================
 
-"""Tests for object_detection.models.ssd_inception_v2_feature_extractor."""
+"""Tests for object_detection.model.ssd_inception_v2_feature_extractor."""
 import unittest
 import numpy as np
 import tensorflow.compat.v1 as tf

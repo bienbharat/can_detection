@@ -225,7 +225,7 @@ model {
         model_builder, 'build', autospec=True) as mock_builder:
       mock_builder.return_value = FakeModel()
       output_directory = os.path.join(tmp_dir, 'output')
-      expected_message = 'Only ssd or center_net models are supported in tflite'
+      expected_message = 'Only ssd or center_net model are supported in tflite'
       try:
         export_tflite_graph_lib_tf2.export_tflite_model(
             pipeline_config=pipeline_config,

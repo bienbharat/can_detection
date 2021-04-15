@@ -12,7 +12,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-"""Main function to train various object detection models."""
+"""Main function to train various object detection model."""
 
 import functools
 import pprint

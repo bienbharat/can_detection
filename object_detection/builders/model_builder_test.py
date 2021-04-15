@@ -13,7 +13,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 # ==============================================================================
-"""Tests for object_detection.models.model_builder."""
+"""Tests for object_detection.model.model_builder."""
 
 from absl.testing import parameterized
 

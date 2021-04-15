@@ -107,7 +107,7 @@ def get_config(model: str, dataset: str) -> base_configs.ExperimentConfig:
       raise KeyError('Invalid dataset received. Received: {}. Supported '
                      'datasets include: {}'.format(
                          dataset, ', '.join(dataset_model_config_map.keys())))
-    raise KeyError('Invalid model received. Received: {}. Supported models for'
+    raise KeyError('Invalid model received. Received: {}. Supported model for'
                    '{} include: {}'.format(
                        model, dataset,
                        ', '.join(dataset_model_config_map[dataset].keys())))

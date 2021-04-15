@@ -12,7 +12,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-"""Helper functions for the Keras implementations of models."""
+"""Helper functions for the Keras implementations of model."""
 
 import multiprocessing
 import os
@@ -48,7 +48,7 @@ class BatchTimestamp(object):
 
 
 class TimeHistory(tf.keras.callbacks.Callback):
-  """Callback for Keras models."""
+  """Callback for Keras model."""
 
   def __init__(self, batch_size, log_steps, initial_step=0, logdir=None):
     """Callback for logging performance.

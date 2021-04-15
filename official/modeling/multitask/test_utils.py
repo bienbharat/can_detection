@@ -12,7 +12,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-"""Testing utils for mock models and tasks."""
+"""Testing utils for mock model and tasks."""
 from typing import Dict, Text
 import tensorflow as tf
 from official.core import base_task

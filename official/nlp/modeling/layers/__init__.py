@@ -12,9 +12,9 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-"""Layers are the fundamental building blocks for NLP models.
+"""Layers are the fundamental building blocks for NLP model.
 
-They can be used to assemble new `tf.keras` layers or models.
+They can be used to assemble new `tf.keras` layers or model.
 """
 # pylint: disable=wildcard-import
 from official.nlp.modeling.layers.attention import *

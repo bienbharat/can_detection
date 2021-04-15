@@ -14,7 +14,7 @@
 # limitations under the License.
 # ==============================================================================
 
-r"""Creates and runs TF2 object detection models.
+r"""Creates and runs TF2 object detection model.
 
 For local training/evaluation run:
 PIPELINE_CONFIG_PATH=path/to/pipeline.config

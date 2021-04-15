@@ -29,7 +29,7 @@ class AlbertConfig(configs.BertConfig):
       num_hidden_groups: Number of group for the hidden layers, parameters in
         the same group are shared. Note that this value and also the following
         'inner_group_num' has to be 1 for now, because all released ALBERT
-        models set them to 1. We may support arbitary valid values in future.
+        model set them to 1. We may support arbitary valid values in future.
       inner_group_num: Number of inner repetition of attention and ffn.
       **kwargs: The remaining arguments are the same as above 'BertConfig'.
     """

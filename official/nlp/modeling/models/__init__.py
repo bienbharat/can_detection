@@ -12,10 +12,10 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-"""Models are combinations of `tf.keras` layers and models that can be trained.
+"""Models are combinations of `tf.keras` layers and model that can be trained.
 
-Several pre-built canned models are provided to train encoder networks.
-These models are intended as both convenience functions and canonical examples.
+Several pre-built canned model are provided to train encoder networks.
+These model are intended as both convenience functions and canonical examples.
 """
 from official.nlp.modeling.models.bert_classifier import BertClassifier
 from official.nlp.modeling.models.bert_pretrainer import *

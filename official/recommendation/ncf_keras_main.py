@@ -14,8 +14,8 @@
 
 """NCF framework to train and evaluate the NeuMF model.
 
-The NeuMF model assembles both MF and MLP models under the NCF framework. Check
-`neumf_model.py` for more details about the models.
+The NeuMF model assembles both MF and MLP model under the NCF framework. Check
+`neumf_model.py` for more details about the model.
 """
 
 import json

@@ -21,7 +21,7 @@ It assumes the reader has completed the following prerequisites:
 │   ├── label_map.txt
 │   ├── train-00000-of-00002.tfrecord
 │   └── train-00001-of-00002.tfrecord
-└── models/
+└── model/
     └── my_model_dir/
         ├── eval/                      # Created by evaluation job.
         ├── my_model.config
@@ -60,7 +60,7 @@ A list of detection checkpoints can be found [here](tf1_detection_zoo.md).
 A local training job can be run with the following command:
 
 ```bash
-# From the tensorflow/models/research/ directory
+# From the tensorflow/model/research/ directory
 PIPELINE_CONFIG_PATH={path to pipeline config file}
 MODEL_DIR={path to model directory}
 NUM_TRAIN_STEPS=50000
@@ -132,7 +132,7 @@ been written, a user can start a training job on Cloud ML Engine using the
 following command:
 
 ```bash
-# From the tensorflow/models/research/ directory
+# From the tensorflow/model/research/ directory
 cp object_detection/packages/tf1/setup.py .
 gcloud ml-engine jobs submit training object_detection_`date +%m_%d_%Y_%H_%M_%S` \
     --runtime-version 1.15 \
@@ -162,7 +162,7 @@ Launching a training job with a TPU compatible pipeline config requires using a
 similar command:
 
 ```bash
-# From the tensorflow/models/research/ directory
+# From the tensorflow/model/research/ directory
 cp object_detection/packages/tf1/setup.py .
 gcloud ml-engine jobs submit training `whoami`_object_detection_`date +%m_%d_%Y_%H_%M_%S` \
     --job-dir=gs://${MODEL_DIR} \
@@ -196,7 +196,7 @@ configuration for evaluation. Run the following command to start the evaluation
 job:
 
 ```bash
-# From the tensorflow/models/research/ directory
+# From the tensorflow/model/research/ directory
 cp object_detection/packages/tf1/setup.py .
 gcloud ml-engine jobs submit training object_detection_eval_`date +%m_%d_%Y_%H_%M_%S` \
     --runtime-version 1.15 \

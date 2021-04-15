@@ -12,7 +12,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-"""Build video classification models."""
+"""Build video classification model."""
 from typing import Any, Mapping, Optional, Union
 import tensorflow as tf
 

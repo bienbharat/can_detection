@@ -13,7 +13,7 @@
 # limitations under the License.
 # ==============================================================================
 
-"""Utils for Keras models."""
+"""Utils for Keras model."""
 
 from __future__ import absolute_import
 from __future__ import division

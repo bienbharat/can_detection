@@ -26,7 +26,7 @@ initializers = tf.keras.initializers
 class TNExpandCondense(Layer):
   """A TPU-optimized TensorNetwork layer.
 
-  Designed for use in models that currently use Dense layers to achieve
+  Designed for use in model that currently use Dense layers to achieve
   up projection followed by down projection.
 
   This layer is a TPU-optimized combination of 3 operations:

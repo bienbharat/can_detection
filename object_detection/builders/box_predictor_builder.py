@@ -681,7 +681,7 @@ def build(argscope_fn, box_predictor_config, is_training, num_classes,
       and returns a tf slim argscope for Conv and FC hyperparameters.
     box_predictor_config: box_predictor_pb2.BoxPredictor proto containing
       configuration.
-    is_training: Whether the models is in training mode.
+    is_training: Whether the model is in training mode.
     num_classes: Number of classes to predict.
     add_background_class: Whether to add an implicit background class.
 
@@ -844,7 +844,7 @@ def build_keras(hyperparams_fn, freeze_batchnorm, inplace_batchnorm_update,
       feature map.
     box_predictor_config: box_predictor_pb2.BoxPredictor proto containing
       configuration.
-    is_training: Whether the models is in training mode.
+    is_training: Whether the model is in training mode.
     num_classes: Number of classes to predict.
     add_background_class: Whether to add an implicit background class.
 

@@ -22,10 +22,10 @@ from setuptools import setup
 
 version = '2.4.0'
 
-project_name = 'tf-models-official'
+project_name = 'tf-model-official'
 
-long_description = """The TensorFlow official models are a collection of
-models that use TensorFlow's high-level APIs.
+long_description = """The TensorFlow official model are a collection of
+model that use TensorFlow's high-level APIs.
 They are intended to be well-maintained, tested, and kept up to date with the
 latest TensorFlow API. They should also be reasonably optimized for fast
 performance while still being easy to read."""
@@ -56,7 +56,7 @@ def _get_requirements():
 
 install_requires, dependency_links = _get_requirements()
 
-if project_name == 'tf-models-nightly':
+if project_name == 'tf-model-nightly':
   version += '.dev' + datetime.datetime.now().strftime('%Y%m%d')
   install_requires.append('tf-nightly')
   install_requires.append('tensorflow-text-nightly')

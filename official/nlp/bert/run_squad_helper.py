@@ -12,7 +12,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-"""Library for running BERT family models on SQuAD 1.1/2.0 in TF 2.x."""
+"""Library for running BERT family model on SQuAD 1.1/2.0 in TF 2.x."""
 
 import collections
 import json
@@ -67,7 +67,7 @@ def define_common_squad_flags():
   flags.DEFINE_bool(
       'do_lower_case', True,
       'Whether to lower case the input text. Should be True for uncased '
-      'models and False for cased models.')
+      'model and False for cased model.')
   flags.DEFINE_float(
       'null_score_diff_threshold', 0.0,
       'If null_score - best_non_null is greater than the threshold, '

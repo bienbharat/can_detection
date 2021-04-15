@@ -740,7 +740,7 @@ def prepare_eval_dict(detections, groundtruth, features):
 
   groundtruth_boxes = groundtruth[fields.InputDataFields.groundtruth_boxes]
   groundtruth_boxes_shape = tf.shape(groundtruth_boxes)
-  # For class-agnostic models, groundtruth one-hot encodings collapse to all
+  # For class-agnostic model, groundtruth one-hot encodings collapse to all
   # ones.
   class_agnostic = (
       fields.DetectionResultFields.detection_classes not in detections)

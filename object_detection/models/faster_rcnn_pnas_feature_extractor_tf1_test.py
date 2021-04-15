@@ -13,7 +13,7 @@
 # limitations under the License.
 # ==============================================================================
 
-"""Tests for models.faster_rcnn_pnas_feature_extractor."""
+"""Tests for model.faster_rcnn_pnas_feature_extractor."""
 import unittest
 import tensorflow.compat.v1 as tf
 

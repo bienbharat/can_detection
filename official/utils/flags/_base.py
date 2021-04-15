@@ -12,7 +12,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-"""Flags which will be nearly universal across models."""
+"""Flags which will be nearly universal across model."""
 
 from absl import flags
 import tensorflow as tf

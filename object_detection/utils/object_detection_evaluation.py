@@ -780,7 +780,7 @@ class OpenImagesChallengeEvaluator(OpenImagesDetectionEvaluator):
     ignored.
 
     Open Images Challenge Instance Segmentation metric allows to measure per
-    formance of models in case of incomplete annotations: some instances are
+    formance of model in case of incomplete annotations: some instances are
     annotations only on box level and some - on image-level. In addition,
     image-level labels are taken into account as in detection metric.
 

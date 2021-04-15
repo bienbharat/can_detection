@@ -21,7 +21,7 @@ It assumes the reader has completed the following prerequisites:
 │   ├── label_map.txt
 │   ├── train-00000-of-00002.tfrecord
 │   └── train-00001-of-00002.tfrecord
-└── models/
+└── model/
     └── my_model_dir/
         ├── eval/                 # Created by evaluation job.
         ├── my_model.config
@@ -62,7 +62,7 @@ A list of detection checkpoints can be found [here](tf2_detection_zoo.md).
 A local training job can be run with the following command:
 
 ```bash
-# From the tensorflow/models/research/ directory
+# From the tensorflow/model/research/ directory
 PIPELINE_CONFIG_PATH={path to pipeline config file}
 MODEL_DIR={path to model directory}
 python object_detection/model_main_tf2.py \
@@ -80,7 +80,7 @@ written.
 A local evaluation job can be run with the following command:
 
 ```bash
-# From the tensorflow/models/research/ directory
+# From the tensorflow/model/research/ directory
 PIPELINE_CONFIG_PATH={path to pipeline config file}
 MODEL_DIR={path to model directory}
 CHECKPOINT_DIR=${MODEL_DIR}
@@ -124,7 +124,7 @@ Training on GPU or TPU VMs is similar to local training. It can be launched
 using the following command.
 
 ```bash
-# From the tensorflow/models/research/ directory
+# From the tensorflow/model/research/ directory
 USE_TPU=true
 TPU_NAME="MY_TPU_NAME"
 PIPELINE_CONFIG_PATH={path to pipeline config file}
@@ -148,7 +148,7 @@ Evaluation is only supported on GPU. Similar to local evaluation it can be
 launched using the following command:
 
 ```bash
-# From the tensorflow/models/research/ directory
+# From the tensorflow/model/research/ directory
 PIPELINE_CONFIG_PATH={path to pipeline config file}
 MODEL_DIR={path to model directory}
 CHECKPOINT_DIR=${MODEL_DIR}
@@ -191,7 +191,7 @@ A user can start a training job on Cloud AI Platform using the following
 command:
 
 ```bash
-# From the tensorflow/models/research/ directory
+# From the tensorflow/model/research/ directory
 cp object_detection/packages/tf2/setup.py .
 gcloud ai-platform jobs submit training object_detection_`date +%m_%d_%Y_%H_%M_%S` \
     --runtime-version 2.1 \
@@ -221,7 +221,7 @@ Launching a training job with a TPU compatible pipeline config requires using a
 similar command:
 
 ```bash
-# From the tensorflow/models/research/ directory
+# From the tensorflow/model/research/ directory
 cp object_detection/packages/tf2/setup.py .
 gcloud ai-platform jobs submit training `whoami`_object_detection_`date +%m_%d_%Y_%H_%M_%S` \
     --job-dir=gs://${MODEL_DIR} \
@@ -246,7 +246,7 @@ Evaluation jobs run on a single machine. Run the following command to start the
 evaluation job:
 
 ```bash
-# From the tensorflow/models/research/ directory
+# From the tensorflow/model/research/ directory
 cp object_detection/packages/tf2/setup.py .
 gcloud ai-platform jobs submit training object_detection_eval_`date +%m_%d_%Y_%H_%M_%S` \
     --runtime-version 2.1 \

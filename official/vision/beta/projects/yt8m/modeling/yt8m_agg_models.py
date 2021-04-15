@@ -47,7 +47,7 @@ class LogisticModel():
 
 
 class MoeModel():
-  """A softmax over a mixture of logistic models (with L2 regularization)."""
+  """A softmax over a mixture of logistic model (with L2 regularization)."""
 
   def create_model(self,
                    model_input,

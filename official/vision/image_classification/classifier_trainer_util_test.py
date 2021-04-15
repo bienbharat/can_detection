@@ -13,7 +13,7 @@
 # limitations under the License.
 
 # Lint as: python3
-"""Unit tests for the classifier trainer models."""
+"""Unit tests for the classifier trainer model."""
 
 from __future__ import absolute_import
 from __future__ import division

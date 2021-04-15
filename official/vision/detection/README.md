@@ -16,7 +16,7 @@ a few package you need to install to get started:
 
 ```bash
 sudo apt-get install -y python-tk && \
-pip3 install -r ~/models/official/requirements.txt
+pip3 install -r ~/model/official/requirements.txt
 ```
 
 ## Train RetinaNet on TPU
@@ -30,7 +30,7 @@ RESNET_CHECKPOINT="<path to the pre-trained Resnet-50 checkpoint>"
 TRAIN_FILE_PATTERN="<path to the TFRecord training data>"
 EVAL_FILE_PATTERN="<path to the TFRecord validation data>"
 VAL_JSON_FILE="<path to the validation annotation JSON file>"
-python3 ~/models/official/vision/detection/main.py \
+python3 ~/model/official/vision/detection/main.py \
   --strategy_type=tpu \
   --tpu="${TPU_NAME?}" \
   --model_dir="${MODEL_DIR?}" \
@@ -56,7 +56,7 @@ MODEL_DIR="<path to the directory to store model files>"
 TRAIN_FILE_PATTERN="<path to the TFRecord training data>"
 EVAL_FILE_PATTERN="<path to the TFRecord validation data>"
 VAL_JSON_FILE="<path to the validation annotation JSON file>"
-python3 ~/models/official/vision/detection/main.py \
+python3 ~/model/official/vision/detection/main.py \
   --strategy_type=tpu \
   --tpu="${TPU_NAME?}" \
   --model_dir="${MODEL_DIR?}" \
@@ -87,7 +87,7 @@ following command.
 ```bash
 TPU_NAME="<your GCP TPU name>"
 MODEL_DIR="<path to the directory to store model files>"
-python3 ~/models/official/vision/detection/main.py \
+python3 ~/model/official/vision/detection/main.py \
   --strategy_type=tpu \
   --tpu="${TPU_NAME?}" \
   --model_dir="${MODEL_DIR?}" \
@@ -105,7 +105,7 @@ Multi-GPUs example (assuming there are 8GPU connected to the host):
 
 ```bash
 MODEL_DIR="<path to the directory to store model files>"
-python3 ~/models/official/vision/detection/main.py \
+python3 ~/model/official/vision/detection/main.py \
   --strategy_type=mirrored \
   --num_gpus=8 \
   --model_dir="${MODEL_DIR?}" \
@@ -115,7 +115,7 @@ python3 ~/models/official/vision/detection/main.py \
 
 ```bash
 MODEL_DIR="<path to the directory to store model files>"
-python3 ~/models/official/vision/detection/main.py \
+python3 ~/model/official/vision/detection/main.py \
   --strategy_type=one_device \
   --num_gpus=1 \
   --model_dir="${MODEL_DIR?}" \
@@ -160,7 +160,7 @@ RESNET_CHECKPOINT="<path to the pre-trained Resnet-50 checkpoint>"
 TRAIN_FILE_PATTERN="<path to the TFRecord training data>"
 EVAL_FILE_PATTERN="<path to the TFRecord validation data>"
 VAL_JSON_FILE="<path to the validation annotation JSON file>"
-python3 ~/models/official/vision/detection/main.py \
+python3 ~/model/official/vision/detection/main.py \
   --strategy_type=tpu \
   --tpu=${TPU_NAME} \
   --model_dir=${MODEL_DIR} \
@@ -187,7 +187,7 @@ MODEL_DIR="<path to the directory to store model files>"
 TRAIN_FILE_PATTERN="<path to the TFRecord training data>"
 EVAL_FILE_PATTERN="<path to the TFRecord validation data>"
 VAL_JSON_FILE="<path to the validation annotation JSON file>"
-python3 ~/models/official/vision/detection/main.py \
+python3 ~/model/official/vision/detection/main.py \
   --strategy_type=tpu \
   --tpu="${TPU_NAME?}" \
   --model_dir="${MODEL_DIR?}" \
@@ -218,7 +218,7 @@ following command.
 ```bash
 TPU_NAME="<your GCP TPU name>"
 MODEL_DIR="<path to the directory to store model files>"
-python3 ~/models/official/vision/detection/main.py \
+python3 ~/model/official/vision/detection/main.py \
   --strategy_type=tpu \
   --tpu=${TPU_NAME} \
   --model_dir=${MODEL_DIR} \
@@ -240,7 +240,7 @@ Multi-GPUs example (assuming there are 8GPU connected to the host):
 
 ```bash
 MODEL_DIR="<path to the directory to store model files>"
-python3 ~/models/official/vision/detection/main.py \
+python3 ~/model/official/vision/detection/main.py \
   --strategy_type=mirrored \
   --num_gpus=8 \
   --model_dir=${MODEL_DIR} \
@@ -251,7 +251,7 @@ python3 ~/models/official/vision/detection/main.py \
 
 ```bash
 MODEL_DIR="<path to the directory to store model files>"
-python3 ~/models/official/vision/detection/main.py \
+python3 ~/model/official/vision/detection/main.py \
   --strategy_type=one_device \
   --num_gpus=1 \
   --model_dir=${MODEL_DIR} \
@@ -297,7 +297,7 @@ TRAIN_FILE_PATTERN="<path to the TFRecord training data>"
 EVAL_FILE_PATTERN="<path to the TFRecord validation data>"
 VAL_JSON_FILE="<path to the validation annotation JSON file>"
 SHAPE_PRIOR_PATH="<path to shape priors>"
-python3 ~/models/official/vision/detection/main.py \
+python3 ~/model/official/vision/detection/main.py \
   --strategy_type=tpu \
   --tpu=${TPU_NAME} \
   --model_dir=${MODEL_DIR} \
@@ -337,7 +337,7 @@ following command.
 ```bash
 TPU_NAME="<your GCP TPU name>"
 MODEL_DIR="<path to the directory to store model files>"
-python3 ~/models/official/vision/detection/main.py \
+python3 ~/model/official/vision/detection/main.py \
   --strategy_type=tpu \
   --tpu=${TPU_NAME} \
   --model_dir=${MODEL_DIR} \
@@ -359,7 +359,7 @@ Multi-GPUs example (assuming there are 8GPU connected to the host):
 
 ```bash
 MODEL_DIR="<path to the directory to store model files>"
-python3 ~/models/official/vision/detection/main.py \
+python3 ~/model/official/vision/detection/main.py \
   --strategy_type=mirrored \
   --num_gpus=8 \
   --model_dir=${MODEL_DIR} \
@@ -372,7 +372,7 @@ A single GPU example
 
 ```bash
 MODEL_DIR="<path to the directory to store model files>"
-python3 ~/models/official/vision/detection/main.py \
+python3 ~/model/official/vision/detection/main.py \
   --strategy_type=one_device \
   --num_gpus=1 \
   --model_dir=${MODEL_DIR} \

@@ -287,7 +287,7 @@ class SentencepieceTokenizer(tf.keras.layers.Layer):
 
     Args:
       lower_case: A Python boolean indicating whether to lowercase the string
-        before tokenization. NOTE: New models are encouraged to build `*_cf`
+        before tokenization. NOTE: New model are encouraged to build `*_cf`
         (case folding) normalization into the Sentencepiece model itself and
         avoid this extra step.
       model_file_path: A Python string with the path of the sentencepiece model.
@@ -313,7 +313,7 @@ class SentencepieceTokenizer(tf.keras.layers.Layer):
         diacritics requires additional text normalization and dropping bytes,
         which makes it impossible to keep track of the offsets now. Hence
         when `strip_diacritics` is set to True, we don't yet support
-        `tokenize_with_offsets`. NOTE: New models are encouraged to put this
+        `tokenize_with_offsets`. NOTE: New model are encouraged to put this
         into custom normalization rules for the Sentencepiece model itself to
         avoid this extra step and the limitation regarding offsets.
       **kwargs: standard arguments to `Layer()`.

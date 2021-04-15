@@ -31,7 +31,7 @@ if tf_version.is_tf2():
 class KerasLayerHyperparams(object):
   """
   A hyperparameter configuration object for Keras layers used in
-  Object Detection models.
+  Object Detection model.
   """
 
   def __init__(self, hyperparams_config):
@@ -433,7 +433,7 @@ def _build_batch_norm_params(batch_norm, is_training):
 
   Args:
     batch_norm: hyperparams_pb2.ConvHyperparams.batch_norm proto.
-    is_training: Whether the models is in training mode.
+    is_training: Whether the model is in training mode.
 
   Returns:
     A dictionary containing batch_norm parameters.
@@ -444,7 +444,7 @@ def _build_batch_norm_params(batch_norm, is_training):
       'scale': batch_norm.scale,
       'epsilon': batch_norm.epsilon,
       # Remove is_training parameter from here and deprecate it in the proto
-      # once we refactor Faster RCNN models to set is_training through an outer
+      # once we refactor Faster RCNN model to set is_training through an outer
       # arg_scope in the meta architecture.
       'is_training': is_training and batch_norm.train,
   }

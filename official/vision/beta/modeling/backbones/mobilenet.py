@@ -297,7 +297,7 @@ MNV3Small_BLOCK_SPECS = {
 
 """
 The EdgeTPU version is taken from
-github.com/tensorflow/models/blob/master/research/slim/nets/mobilenet/mobilenet_v3.py
+github.com/tensorflow/model/blob/master/research/slim/nets/mobilenet/mobilenet_v3.py
 """
 MNV3EdgeTPU_BLOCK_SPECS = {
     'spec_name': 'MobileNetV3EdgeTPU',

@@ -50,7 +50,7 @@ following.
 
 ```shell
 $ git clone https://github.com/tensorflow/models.git
-$ cd models
+$ cd model
 $ pip3 install -r official/requirements.txt
 ```
 

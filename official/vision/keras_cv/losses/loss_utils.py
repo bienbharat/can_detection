@@ -12,7 +12,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-"""Losses utilities for detection models."""
+"""Losses utilities for detection model."""
 
 import tensorflow as tf
 

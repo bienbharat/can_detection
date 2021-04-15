@@ -66,7 +66,7 @@ flags.DEFINE_bool("bi_data", True, "Whether or not to use bi-directional data.")
 flags.DEFINE_bool(
     "do_lower_case", True,
     "Whether to lower case the input text. Should be True for uncased "
-    "models and False for cased models.")
+    "model and False for cased model.")
 flags.DEFINE_integer("per_host_batch_size", 32, "Batch size per host.")
 flags.DEFINE_integer("num_cores_per_host", 16,
                      "The number of (TPU) cores per host.")

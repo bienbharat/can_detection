@@ -12,7 +12,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-"""Defining common flags used across all BERT models/applications."""
+"""Defining common flags used across all BERT model/applications."""
 
 from absl import flags
 import tensorflow as tf

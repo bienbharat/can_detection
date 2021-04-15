@@ -859,7 +859,7 @@ def _update_momentum_optimizer_value(configs, momentum):
 def _update_classification_localization_weight_ratio(configs, ratio):
   """Updates the classification/localization weight loss ratio.
 
-  Detection models usually define a loss weight for both classification and
+  Detection model usually define a loss weight for both classification and
   objectness. This function updates the weights such that the ratio between
   classification weight to localization weight is the ratio provided.
   Arbitrarily, localization weight is set to 1.0.

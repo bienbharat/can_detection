@@ -572,7 +572,7 @@ def get_model_params(model: Optional[Text] = "bert2bert",
 def create_model(model_type: Text,
                  params,
                  init_checkpoint: Optional[Text] = None):
-  """A factory function to create different types of models."""
+  """A factory function to create different types of model."""
   if model_type == "bert2bert":
     return create_bert2bert_model(params, init_checkpoint=init_checkpoint)
   elif model_type == "nhnet":

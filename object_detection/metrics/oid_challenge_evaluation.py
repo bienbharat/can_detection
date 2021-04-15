@@ -17,7 +17,7 @@ r"""Runs evaluation using OpenImages groundtruth and predictions.
 Uses Open Images Challenge 2018, 2019 metrics
 
 Example usage:
-python models/research/object_detection/metrics/oid_od_challenge_evaluation.py \
+python model/research/object_detection/metrics/oid_od_challenge_evaluation.py \
     --input_annotations_boxes=/path/to/input/annotations-human-bbox.csv \
     --input_annotations_labels=/path/to/input/annotations-label.csv \
     --input_class_labelmap=/path/to/input/class_labelmap.pbtxt \

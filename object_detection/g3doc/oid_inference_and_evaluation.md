@@ -41,7 +41,7 @@ download ground truth boxes from the [Open Images
 website](https://github.com/openimages/dataset):
 
 ```bash
-# From tensorflow/models/research
+# From tensorflow/model/research
 mkdir oid
 cd oid
 wget https://storage.googleapis.com/openimages/2017_07/annotations_human_bbox_2017_07.tar.gz
@@ -55,7 +55,7 @@ page](https://github.com/cvdfoundation/open-images-dataset) in order to gain
 access to the cloud bucket with the images. Then run:
 
 ```bash
-# From tensorflow/models/research/oid
+# From tensorflow/model/research/oid
 SPLIT=validation  # Set SPLIT to "test" to download the images in the test set
 mkdir raw_images_${SPLIT}
 gsutil -m rsync -r gs://open-images-dataset/$SPLIT raw_images_${SPLIT}
@@ -87,7 +87,7 @@ follows:
 Next, package the data into TFRecords of TFExamples by running:
 
 ```bash
-# From tensorflow/models/research/oid
+# From tensorflow/model/research/oid
 SPLIT=validation  # Set SPLIT to "test" to create TFRecords for the test split
 mkdir ${SPLIT}_tfrecords
 
@@ -119,7 +119,7 @@ the model, such as its architecture and how it was trained, is available in the
 [model zoo page](tf1_detection_zoo.md).
 
 ```bash
-# From tensorflow/models/research/oid
+# From tensorflow/model/research/oid
 wget http://download.tensorflow.org/models/object_detection/faster_rcnn_inception_resnet_v2_atrous_oid_14_10_2017.tar.gz
 tar -zxvf faster_rcnn_inception_resnet_v2_atrous_oid_14_10_2017.tar.gz
 ```
@@ -128,7 +128,7 @@ At this point, data is packed into TFRecords and we have an object detector
 model. We can run inference using:
 
 ```bash
-# From tensorflow/models/research/oid
+# From tensorflow/model/research/oid
 SPLIT=validation  # or test
 TF_RECORD_FILES=$(ls -1 ${SPLIT}_tfrecords/* | tr '\n' ',')
 
@@ -173,7 +173,7 @@ TensorFlow devices on possibly multiple machines. The script below uses
 process for each GPU on different partition of the input data.
 
 ```bash
-# From tensorflow/models/research/oid
+# From tensorflow/model/research/oid
 SPLIT=validation  # or test
 NUM_GPUS=4
 NUM_SHARDS=100
@@ -204,7 +204,7 @@ To compute evaluation measures on the inferred detections you first need to
 create the appropriate configuration files:
 
 ```bash
-# From tensorflow/models/research/oid
+# From tensorflow/model/research/oid
 SPLIT=validation  # or test
 NUM_SHARDS=1  # Set to NUM_GPUS if using the parallel evaluation script above
 
@@ -223,7 +223,7 @@ metrics_set: 'oid_V2_detection_metrics'
 And then run:
 
 ```bash
-# From tensorflow/models/research/oid
+# From tensorflow/model/research/oid
 SPLIT=validation  # or test
 
 PYTHONPATH=$PYTHONPATH:$(readlink -f ..) \

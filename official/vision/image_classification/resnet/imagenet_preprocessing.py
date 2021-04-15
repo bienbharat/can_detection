@@ -254,7 +254,7 @@ def parse_record(raw_record, is_training, dtype):
 def get_parse_record_fn(use_keras_image_data_format=False):
   """Get a function for parsing the records, accounting for image format.
 
-  This is useful by handling different types of Keras models. For instance,
+  This is useful by handling different types of Keras model. For instance,
   the current resnet_model.resnet50 input format is always channel-last,
   whereas the keras_applications mobilenet input format depends on
   tf.keras.backend.image_data_format(). We should set

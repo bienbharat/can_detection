@@ -13,7 +13,7 @@
 # limitations under the License.
 # ==============================================================================
 
-"""Utility functions for manipulating Keras models."""
+"""Utility functions for manipulating Keras model."""
 
 from __future__ import absolute_import
 from __future__ import division
@@ -31,7 +31,7 @@ def extract_submodel(model, inputs, outputs, name=None):
   model.
 
   WARNING: This method does not work for submodels containing layers that have
-  been used multiple times in the original model, or in other models beyond
+  been used multiple times in the original model, or in other model beyond
   the original model. (E.g. does not work for submodels that contain layers that
   use shared weights). This also means that multiple overlapping submodels
   cannot be extracted from the same model.

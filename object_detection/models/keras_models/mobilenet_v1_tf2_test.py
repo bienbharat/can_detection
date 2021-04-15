@@ -17,7 +17,7 @@
 """Tests for mobilenet_v1.py.
 
 This test mainly focuses on comparing slim MobilenetV1 and Keras MobilenetV1 for
-object detection. To verify the consistency of the two models, we compare:
+object detection. To verify the consistency of the two model, we compare:
   1. Output shape of each layer given different inputs
   2. Number of global variables
 

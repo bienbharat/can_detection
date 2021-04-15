@@ -326,7 +326,7 @@ def write_example_to_file(examples,
 
     Note the use of -1 in `label_ids` to indicate that a token should not be
     considered for classification (e.g., trailing ## wordpieces or special
-    token). Token classification models should accordingly ignore these when
+    token). Token classification model should accordingly ignore these when
     calculating loss, metrics, etc...
 
   Args:

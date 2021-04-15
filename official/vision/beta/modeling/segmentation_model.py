@@ -12,7 +12,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-"""Build segmentation models."""
+"""Build segmentation model."""
 from typing import Any, Mapping, Union
 
 # Import libraries

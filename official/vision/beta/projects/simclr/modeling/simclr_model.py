@@ -26,7 +26,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 # ==============================================================================
-"""Build simclr models."""
+"""Build simclr model."""
 
 from typing import Optional
 from absl import logging

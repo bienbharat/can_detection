@@ -12,7 +12,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-"""Flags for benchmarking models."""
+"""Flags for benchmarking model."""
 
 from absl import flags
 

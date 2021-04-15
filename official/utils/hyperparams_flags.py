@@ -29,7 +29,7 @@ def define_gin_flags():
 
 
 def define_common_hparams_flags():
-  """Define the common flags across models."""
+  """Define the common flags across model."""
 
   flags.DEFINE_string(
       'model_dir',
@@ -77,7 +77,7 @@ def define_common_hparams_flags():
 
 
 def initialize_common_flags():
-  """Define the common flags across models."""
+  """Define the common flags across model."""
   define_common_hparams_flags()
 
   flags_core.define_device(tpu=True)

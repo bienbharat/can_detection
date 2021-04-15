@@ -12,7 +12,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-"""Provides functions to help with evaluating models."""
+"""Provides functions to help with evaluating model."""
 import numpy as np
 import tensorflow as tf
 from official.vision.beta.projects.yt8m.eval_utils import \

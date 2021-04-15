@@ -12,7 +12,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 # ==============================================================================
-r"""Evaluation executable for detection models.
+r"""Evaluation executable for detection model.
 
 This executable is used to evaluate DetectionModels. There are two ways of
 configuring the eval job.

@@ -12,7 +12,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-"""Losses used for segmentation models."""
+"""Losses used for segmentation model."""
 
 # Import libraries
 import tensorflow as tf

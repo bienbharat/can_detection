@@ -12,7 +12,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-"""An abstraction that NLP models define input pipelines."""
+"""An abstraction that NLP model define input pipelines."""
 
 import abc
 from typing import Optional

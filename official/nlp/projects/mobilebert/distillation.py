@@ -233,7 +233,7 @@ class BertDistillationTask(policies.ProgressivePolicy, base_task.Task):
 
   # override base_task.task
   def build_model(self, stage_id) -> tf.keras.Model:
-    """Build teacher/student keras models with outputs for current stage."""
+    """Build teacher/student keras model with outputs for current stage."""
     # Freeze the teacher model.
     self._teacher_pretrainer.trainable = False
     layer_wise_config = self._progressive_config.layer_wise_distill_config

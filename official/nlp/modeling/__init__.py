@@ -15,7 +15,7 @@
 """NLP Modeling Library.
 
 This library provides a set of Keras primitives (`tf.keras.Layer` and
-`tf.keras.Model`) that can be assembled into transformer-based models.
+`tf.keras.Model`) that can be assembled into transformer-based model.
 They are flexible, validated, interoperable, and both TF1 and TF2 compatible.
 """
 from official.nlp.modeling import layers

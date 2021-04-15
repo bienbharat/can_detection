@@ -4119,8 +4119,8 @@ class CenterNetMetaArch(model.DetectionModel):
     the num_classes parameter.
 
     Note that this function is intended to be used to restore Keras-based
-    models when running Tensorflow 2, whereas restore_map (not implemented
-    in CenterNet) is intended to be used to restore Slim-based models when
+    model when running Tensorflow 2, whereas restore_map (not implemented
+    in CenterNet) is intended to be used to restore Slim-based model when
     running Tensorflow 1.x.
 
     TODO(jonathanhuang): Make this function consistent with other
@@ -4132,10 +4132,10 @@ class CenterNetMetaArch(model.DetectionModel):
         classification checkpoint for initialization prior to training.
         Valid values: `detection`, `classification`, `fine_tune`.
         Default 'detection'.
-        'detection': used when loading models pre-trained on other detection
+        'detection': used when loading model pre-trained on other detection
           tasks. With this checkpoint type the weights of the feature extractor
           are expected under the attribute 'feature_extractor'.
-        'classification': used when loading models pre-trained on an image
+        'classification': used when loading model pre-trained on an image
           classification task. Note that only the encoder section of the network
           is loaded and not the upsampling layers. With this checkpoint type,
           the weights of only the encoder section are expected under the

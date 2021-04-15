@@ -12,7 +12,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-"""Utilities to save models."""
+"""Utilities to save model."""
 
 import os
 

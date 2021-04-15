@@ -18,7 +18,7 @@ import abc
 
 
 class Parser(object):
-  """Parses data and produces tensors to be consumed by models."""
+  """Parses data and produces tensors to be consumed by model."""
 
   __metaclass__ = abc.ABCMeta
 

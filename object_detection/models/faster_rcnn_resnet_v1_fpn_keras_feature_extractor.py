@@ -127,7 +127,7 @@ class FasterRCNNResnetV1FpnKerasFeatureExtractor(
     Args:
       is_training: See base class.
       resnet_v1_base_model: base resnet v1 network to use. One of
-        the resnet_v1.resnet_v1_{50,101,152} models.
+        the resnet_v1.resnet_v1_{50,101,152} model.
       resnet_v1_base_model_name: model name under which to construct resnet v1.
       first_stage_features_stride: See base class.
       conv_hyperparams: a `hyperparams_builder.KerasLayerHyperparams` object

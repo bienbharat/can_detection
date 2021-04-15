@@ -35,7 +35,7 @@ def norm_activation_generator(params):
 
 
 def backbone_generator(params):
-  """Generator function for various backbone models."""
+  """Generator function for various backbone model."""
   if params.architecture.backbone == 'resnet':
     resnet_params = params.resnet
     backbone_fn = resnet.Resnet(
@@ -54,7 +54,7 @@ def backbone_generator(params):
 
 
 def multilevel_features_generator(params):
-  """Generator function for various FPN models."""
+  """Generator function for various FPN model."""
   if params.architecture.multilevel_features == 'fpn':
     fpn_params = params.fpn
     fpn_fn = fpn.Fpn(

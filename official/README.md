@@ -103,7 +103,7 @@ pip3 install tf-nightly
 pip will install all models and dependencies automatically.
 
 ```shell
-pip install tf-models-official
+pip install tf-model-official
 ```
 
 If you are using nlp packages, please also install **tensorflow-text**:
@@ -120,7 +120,7 @@ github repo. To include latest changes, you may install **tf-models-nightly**,
 which is the nightly Model Garden package created daily automatically.
 
 ```shell
-pip install tf-models-nightly
+pip install tf-model-nightly
 ```
 
 #### Method 2: Clone the source
@@ -134,14 +134,14 @@ git clone https://github.com/tensorflow/models.git
 2. Add the top-level ***/models*** folder to the Python path.
 
 ```shell
-export PYTHONPATH=$PYTHONPATH:/path/to/models
+export PYTHONPATH=$PYTHONPATH:/path/to/model
 ```
 
 If you are using a Colab notebook, please set the Python path with os.environ.
 
 ```python
 import os
-os.environ['PYTHONPATH'] += ":/path/to/models"
+os.environ['PYTHONPATH'] += ":/path/to/model"
 ```
 
 3. Install other dependencies

@@ -113,7 +113,7 @@ class RuntimeConfig(base_config.Config):
     tpu: The address of the TPU to use, if any.
     num_gpus: The number of GPUs to use, if any.
     worker_hosts: comma-separated list of worker ip:port pairs for running
-      multi-worker models with DistributionStrategy.
+      multi-worker model with DistributionStrategy.
     task_index: If multi-worker training, the task index of this worker.
     all_reduce_alg: Defines the algorithm for performing all-reduce.
     num_packs: Sets `num_packs` in the cross device ops used in

@@ -12,7 +12,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-"""Tests for nlp.nhnet.models."""
+"""Tests for nlp.nhnet.model."""
 
 import os
 

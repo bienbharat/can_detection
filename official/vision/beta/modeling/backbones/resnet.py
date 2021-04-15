@@ -12,7 +12,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-"""Contains definitions of ResNet and ResNet-RS models."""
+"""Contains definitions of ResNet and ResNet-RS model."""
 
 from typing import Callable, Optional
 
@@ -91,7 +91,7 @@ RESNET_SPECS = {
 
 @tf.keras.utils.register_keras_serializable(package='Vision')
 class ResNet(tf.keras.Model):
-  """Creates ResNet and ResNet-RS family models.
+  """Creates ResNet and ResNet-RS family model.
 
   This implements the Deep Residual Network from:
     Kaiming He, Xiangyu Zhang, Shaoqing Ren, Jian Sun.

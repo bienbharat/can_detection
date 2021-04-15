@@ -16,7 +16,7 @@
 
 """Contains definitions of Darknet Backbone Networks.
 
-   The models are inspired by ResNet, and CSPNet
+   The model are inspired by ResNet, and CSPNet
 
 Residual networks (ResNets) were proposed in:
 [1] Kaiming He, Xiangyu Zhang, Shaoqing Ren, Jian Sun

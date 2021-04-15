@@ -12,7 +12,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-"""Helper functions for running models in a distributed setting."""
+"""Helper functions for running model in a distributed setting."""
 
 import json
 import os

@@ -483,7 +483,7 @@ class EfficientNet(tf.keras.Model):
     model_configs = dict(MODEL_CONFIGS)
     overrides = dict(overrides) if overrides else {}
 
-    # One can define their own custom models if necessary
+    # One can define their own custom model if necessary
     model_configs.update(overrides.pop('model_config', {}))
 
     if model_name not in model_configs:

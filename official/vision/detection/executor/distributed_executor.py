@@ -12,7 +12,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-"""Custom training loop for running TensorFlow 2.0 models."""
+"""Custom training loop for running TensorFlow 2.0 model."""
 
 from __future__ import absolute_import
 from __future__ import division
@@ -133,7 +133,7 @@ class SummaryWriter(object):
 
 
 class DistributedExecutor(object):
-  """Interface to train and eval models with tf.distribute.Strategy."""
+  """Interface to train and eval model with tf.distribute.Strategy."""
 
   def __init__(self, strategy, params, model_fn, loss_fn, is_multi_host=False):
     """Constructor.
@@ -142,7 +142,7 @@ class DistributedExecutor(object):
       strategy: an instance of tf.distribute.Strategy.
       params: Model configuration needed to run distribution strategy.
       model_fn: Keras model function. Signature:
-        (params: ParamsDict) -> tf.keras.models.Model.
+        (params: ParamsDict) -> tf.keras.model.Model.
       loss_fn: loss function. Signature:
         (y_true: Tensor, y_pred: Tensor) -> Tensor
       is_multi_host: Set to True when using multi hosts for training, like multi

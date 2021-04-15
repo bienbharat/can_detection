@@ -13,7 +13,7 @@
 # limitations under the License.
 
 # Lint as: python3
-r"""Vision models export utility function for serving/inference."""
+r"""Vision model export utility function for serving/inference."""
 
 import os
 from typing import Optional, List

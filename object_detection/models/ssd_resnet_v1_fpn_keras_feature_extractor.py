@@ -82,7 +82,7 @@ class SSDResNetV1FpnKerasFeatureExtractor(
         dependency on tf.graphkeys.UPDATE_OPS collection in order to update
         batch norm statistics.
       resnet_v1_base_model: base resnet v1 network to use. One of
-        the resnet_v1.resnet_v1_{50,101,152} models.
+        the resnet_v1.resnet_v1_{50,101,152} model.
       resnet_v1_base_model_name: model name under which to construct resnet v1.
       fpn_min_level: the highest resolution feature map to use in FPN. The valid
         values are {2, 3, 4, 5} which map to Resnet blocks {1, 2, 3, 4}

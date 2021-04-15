@@ -12,7 +12,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-"""BERT models that are compatible with TF 2.0."""
+"""BERT model that are compatible with TF 2.0."""
 
 import gin
 import tensorflow as tf

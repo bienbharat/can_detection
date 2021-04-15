@@ -120,7 +120,7 @@ def _prepare_groundtruth_for_eval(detection_model, class_agnostic,
   groundtruth_boxes = tf.stack(
       detection_model.groundtruth_lists(fields.BoxListFields.boxes))
   groundtruth_boxes_shape = tf.shape(groundtruth_boxes)
-  # For class-agnostic models, groundtruth one-hot encodings collapse to all
+  # For class-agnostic model, groundtruth one-hot encodings collapse to all
   # ones.
   if class_agnostic:
     groundtruth_classes_one_hot = tf.ones(
@@ -307,7 +307,7 @@ def provide_groundtruth(model, labels):
 
   This helper function extracts the corresponding boxes, classes,
   keypoints, weights, masks, etc. from the labels, and provides it
-  as groundtruth to the models.
+  as groundtruth to the model.
 
   Args:
     model: The detection model to provide groundtruth to.
@@ -440,7 +440,7 @@ def create_model_fn(detection_model_fn, configs, hparams=None, use_tpu=False,
     # Make sure to set the Keras learning phase. True during training,
     # False for inference.
     tf.keras.backend.set_learning_phase(is_training)
-    # Set policy for mixed-precision training with Keras-based models.
+    # Set policy for mixed-precision training with Keras-based model.
     if use_tpu and train_config.use_bfloat16:
       from tensorflow.python.keras.engine import base_layer_utils  # pylint: disable=g-import-not-at-top
       # Enable v2 behavior, as `mixed_bfloat16` is only supported in TF 2.0.

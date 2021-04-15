@@ -148,7 +148,7 @@ flags.DEFINE_string("meta_data_file_path", None,
 flags.DEFINE_bool(
     "do_lower_case", True,
     "Whether to lower case the input text. Should be True for uncased "
-    "models and False for cased models.")
+    "model and False for cased model.")
 
 flags.DEFINE_integer(
     "max_seq_length", 128,

@@ -104,7 +104,7 @@ Storage so the data can be accessed by ML Engine. Run the following command to
 copy the files into your GCS bucket (substituting `${YOUR_GCS_BUCKET}`):
 
 ```bash
-# From tensorflow/models/research/
+# From tensorflow/model/research/
 gsutil cp pet_faces_train.record-* gs://${YOUR_GCS_BUCKET}/data/
 gsutil cp pet_faces_val.record-* gs://${YOUR_GCS_BUCKET}/data/
 gsutil cp object_detection/data/pet_label_map.pbtxt gs://${YOUR_GCS_BUCKET}/data/pet_label_map.pbtxt
@@ -197,7 +197,7 @@ To package the TensorFlow Object Detection code, run the following commands from
 the `tensorflow/models/research/` directory:
 
 ```bash
-# From tensorflow/models/research/
+# From tensorflow/model/research/
 bash object_detection/dataset_tools/create_pycocotools_package.sh /tmp/pycocotools
 python setup.py sdist
 (cd slim && python setup.py sdist)
@@ -216,7 +216,7 @@ To start training and evaluation, execute the following command from the
 `tensorflow/models/research/` directory:
 
 ```bash
-# From tensorflow/models/research/
+# From tensorflow/model/research/
 gcloud ml-engine jobs submit training `whoami`_object_detection_pets_`date +%m_%d_%Y_%H_%M_%S` \
     --runtime-version 1.12 \
     --job-dir=gs://${YOUR_GCS_BUCKET}/model_dir \
@@ -284,7 +284,7 @@ After you've identified a candidate checkpoint to export, run the following
 command from `tensorflow/models/research/`:
 
 ```bash
-# From tensorflow/models/research/
+# From tensorflow/model/research/
 gsutil cp gs://${YOUR_GCS_BUCKET}/model_dir/model.ckpt-${CHECKPOINT_NUMBER}.* .
 python object_detection/export_inference_graph.py \
     --input_type image_tensor \

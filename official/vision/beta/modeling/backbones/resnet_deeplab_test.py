@@ -13,7 +13,7 @@
 # limitations under the License.
 
 # Lint as: python3
-"""Tests for resnet_deeplab models."""
+"""Tests for resnet_deeplab model."""
 
 # Import libraries
 from absl.testing import parameterized
@@ -35,7 +35,7 @@ class ResNetTest(parameterized.TestCase, tf.test.TestCase):
   )
   def test_network_creation(self, input_size, model_id,
                             endpoint_filter_scale, output_stride):
-    """Test creation of ResNet models."""
+    """Test creation of ResNet model."""
     tf.keras.backend.set_image_data_format('channels_last')
 
     network = resnet_deeplab.DilatedResNet(model_id=model_id,
@@ -56,7 +56,7 @@ class ResNetTest(parameterized.TestCase, tf.test.TestCase):
   )
   def test_network_features(self, stem_type, se_ratio,
                             init_stochastic_depth_rate):
-    """Test additional features of ResNet models."""
+    """Test additional features of ResNet model."""
     input_size = 128
     model_id = 50
     endpoint_filter_scale = 4

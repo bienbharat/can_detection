@@ -21,10 +21,10 @@ image feature map as input and produce two predictions,
 (2) a tensor encoding classes for each box.
 
 These components are passed directly to loss functions
-in our detection models.
+in our detection model.
 
 These modules are separated from the main model since the same
-few box predictor architectures are shared across many models.
+few box predictor architectures are shared across many model.
 """
 from abc import abstractmethod
 import tensorflow.compat.v1 as tf

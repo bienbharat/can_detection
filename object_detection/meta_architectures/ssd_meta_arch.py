@@ -15,7 +15,7 @@
 """SSD Meta-architecture definition.
 
 General tensorflow implementation of convolutional Multibox/SSD detection
-models.
+model.
 """
 import abc
 import tensorflow.compat.v1 as tf
@@ -1304,8 +1304,8 @@ class SSDMetaArch(model.DetectionModel):
     the num_classes parameter.
 
     Note that this function is intended to be used to restore Keras-based
-    models when running Tensorflow 2, whereas restore_map (above) is intended
-    to be used to restore Slim-based models when running Tensorflow 1.x.
+    model when running Tensorflow 2, whereas restore_map (above) is intended
+    to be used to restore Slim-based model when running Tensorflow 1.x.
 
     Args:
       fine_tune_checkpoint_type: A string inidicating the subset of variables

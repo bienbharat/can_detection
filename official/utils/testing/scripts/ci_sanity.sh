@@ -16,7 +16,7 @@
 
 # Sanity check script that runs tests and lint under local environment.
 # Make sure that tensorflow and pylint is installed.
-# usage: models >: ./official/utils/testing/scripts/ci_sanity.sh do_pylint --incremental
+# usage: model >: ./official/utils/testing/scripts/ci_sanity.sh do_pylint --incremental
 set +x
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"

@@ -53,7 +53,7 @@ class ProgressiveTrainerConfig(config_definitions.TrainerConfig):
       TrainerConfig.checkpoint_interval.
     export_only_final_stage_ckpt: A bool. Whether to just export checkpoints
       during the final progressive training stage. In other words, whether to
-      not export small, partial models. In many cases, it is not meaningful to
+      not export small, partial model. In many cases, it is not meaningful to
       finetune a small, partial model in down-stream tasks.
   """
   progressive: Optional[policies.ProgressiveConfig] = None
@@ -64,7 +64,7 @@ class ProgressiveTrainerConfig(config_definitions.TrainerConfig):
 
 @gin.configurable
 class ProgressiveTrainer(trainer_lib.Trainer):
-  """Implements the progressive trainer shared for TensorFlow models."""
+  """Implements the progressive trainer shared for TensorFlow model."""
 
   def __init__(
       self,
@@ -74,7 +74,7 @@ class ProgressiveTrainer(trainer_lib.Trainer):
       train: bool = True,
       evaluate: bool = True,
       checkpoint_exporter: Any = None):
-    """Initialize common trainer for TensorFlow models.
+    """Initialize common trainer for TensorFlow model.
 
     Args:
       config: An `ExperimentConfig` instance specifying experiment config.

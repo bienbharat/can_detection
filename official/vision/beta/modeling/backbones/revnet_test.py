@@ -30,7 +30,7 @@ class RevNetTest(parameterized.TestCase, tf.test.TestCase):
   )
   def test_network_creation(self, input_size, model_id,
                             endpoint_filter_scale):
-    """Test creation of RevNet family models."""
+    """Test creation of RevNet family model."""
     tf.keras.backend.set_image_data_format('channels_last')
 
     network = revnet.RevNet(model_id=model_id)

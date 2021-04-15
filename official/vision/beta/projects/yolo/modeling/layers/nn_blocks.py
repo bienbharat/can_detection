@@ -374,7 +374,7 @@ class CSPTiny(tf.keras.layers.Layer):
         bias
       use_bn: boolean for whether to use batch normalization
       use_sync_bn: boolean for whether sync batch normalization statistics of
-        all batch norm layers to the models global statistics (across all input
+        all batch norm layers to the model global statistics (across all input
         batches)
       group_id: integer for which group of features to pass through the csp tiny
         stack.

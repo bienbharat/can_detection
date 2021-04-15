@@ -4,7 +4,7 @@ from setuptools import find_packages
 from setuptools import setup
 
 # Note: adding apache-beam to required packages causes conflict with
-# tf-models-offical requirements. These packages request for incompatible
+# tf-model-offical requirements. These packages request for incompatible
 # oauth2client package.
 REQUIRED_PACKAGES = [
     # Required for apache-beam with PY3
@@ -21,7 +21,7 @@ REQUIRED_PACKAGES = [
     'lvis',
     'scipy',
     'pandas',
-    'tf-models-official'
+    'tf-model-official'
 ]
 
 setup(

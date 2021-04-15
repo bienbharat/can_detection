@@ -191,7 +191,7 @@ def build_stats(history, eval_output, callbacks):
 def define_keras_flags(model=False,
                        optimizer=False,
                        pretrained_filepath=False):
-  """Define flags for Keras models."""
+  """Define flags for Keras model."""
   flags_core.define_base(
       clean=True,
       num_gpu=True,
@@ -410,7 +410,7 @@ def set_cudnn_batchnorm_mode():
   """Set CuDNN batchnorm mode for better performance.
 
      Note: Spatial Persistent mode may lead to accuracy losses for certain
-     models.
+     model.
   """
   if FLAGS.batchnorm_spatial_persistent:
     os.environ['TF_USE_CUDNN_BATCHNORM_SPATIAL_PERSISTENT'] = '1'

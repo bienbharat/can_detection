@@ -13,7 +13,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 # ==============================================================================
-"""Library to export TFLite-compatible SavedModel from TF2 detection models."""
+"""Library to export TFLite-compatible SavedModel from TF2 detection model."""
 import os
 import numpy as np
 import tensorflow.compat.v1 as tf1
@@ -56,7 +56,7 @@ def get_const_center_size_encoded_anchors(anchors):
 
 
 class SSDModule(tf.Module):
-  """Inference Module for TFLite-friendly SSD models."""
+  """Inference Module for TFLite-friendly SSD model."""
 
   def __init__(self, pipeline_config, detection_model, max_detections,
                use_regular_nms):
@@ -200,7 +200,7 @@ class SSDModule(tf.Module):
 
 
 class CenterNetModule(tf.Module):
-  """Inference Module for TFLite-friendly CenterNet models.
+  """Inference Module for TFLite-friendly CenterNet model.
 
   The exported CenterNet model includes the preprocessing and postprocessing
   logics so the caller should pass in the raw image pixel values. It supports
@@ -352,7 +352,7 @@ def export_tflite_model(pipeline_config, trained_checkpoint_dir,
         label_map_path=label_map_path)
     ckpt = tf.train.Checkpoint(model=detection_module.get_model())
   else:
-    raise ValueError('Only ssd or center_net models are supported in tflite. '
+    raise ValueError('Only ssd or center_net model are supported in tflite. '
                      'Found {} in config'.format(
                          pipeline_config.model.WhichOneof('model')))
 

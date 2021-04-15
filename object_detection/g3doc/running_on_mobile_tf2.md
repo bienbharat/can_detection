@@ -55,7 +55,7 @@ Python API.
 To use the script:
 
 ```bash
-# From the tensorflow/models/research/ directory
+# From the tensorflow/model/research/ directory
 python object_detection/export_tflite_graph_tf2.py \
     --pipeline_config_path path/to/ssd_model/pipeline.config \
     --trained_checkpoint_dir path/to/ssd_model/checkpoint \

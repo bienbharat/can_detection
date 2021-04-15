@@ -32,7 +32,7 @@ class SpineNetTest(parameterized.TestCase, tf.test.TestCase):
   )
   def test_network_creation(self, input_size, filter_size_scale, block_repeats,
                             resample_alpha, endpoints_num_filters):
-    """Test creation of SpineNet models."""
+    """Test creation of SpineNet model."""
     min_level = 3
     max_level = 7
 

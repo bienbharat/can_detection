@@ -251,6 +251,6 @@ class SSDMobileNetV1FpnKerasFeatureExtractor(
       feature_extractor_scope: A scope name for the feature extractor (unused).
 
     Returns:
-      A dict mapping keys to Keras models
+      A dict mapping keys to Keras model
     """
     return {'feature_extractor': self.classification_backbone}

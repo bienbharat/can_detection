@@ -13,11 +13,11 @@
 # limitations under the License.
 # ==============================================================================
 
-"""MobileNet v2 models for Keras.
+"""MobileNet v2 model for Keras.
 
 MobileNetV2 is a general architecture and can be used for multiple use cases.
 Depending on the use case, it can use different input layer size and
-different width factors. This allows different width models to reduce
+different width factors. This allows different width model to reduce
 the number of multiply-adds and thereby
 reduce inference cost on mobile devices.
 
@@ -33,7 +33,7 @@ The number of parameters and number of multiply-adds
 can be modified by using the `alpha` parameter,
 which increases/decreases the number of filters in each layer.
 By altering the image size and `alpha` parameter,
-all 22 models from the paper can be built, with ImageNet weights provided.
+all 22 model from the paper can be built, with ImageNet weights provided.
 
 The paper demonstrates the performance of MobileNets using `alpha` values of
 1.0 (also called 100 % MobileNet), 0.35, 0.5, 0.75, 1.0, 1.3, and 1.4
@@ -72,7 +72,7 @@ MACs stands for Multiply Adds
 | [mobilenet_v2_0.35_128] | 20  | 1.66 |          50.8 | 75.0 |
 | [mobilenet_v2_0.35_96]  | 11  | 1.66 |          45.5 | 70.4 |
 
-The weights for all 16 models are obtained and translated from the Tensorflow
+The weights for all 16 model are obtained and translated from the Tensorflow
 checkpoints from TensorFlow checkpoints found at
 https://github.com/tensorflow/models/blob/master/research/slim/nets/mobilenet/README.md
 
@@ -304,7 +304,7 @@ def mobilenet_v2(input_shape=None,
   cols = input_shape[col_axis]
 
   if K.image_data_format() != 'channels_last':
-    warnings.warn('The MobileNet family of models is only available '
+    warnings.warn('The MobileNet family of model is only available '
                   'for the input data format "channels_last" '
                   '(width, height, channels). '
                   'However your settings specify the default '

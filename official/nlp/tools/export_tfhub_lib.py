@@ -173,7 +173,7 @@ def export_model(export_path: Text,
   encoder_outputs = encoder(encoder_inputs)
   assert encoder_outputs.keys() == {
     "pooled_output",   # Shape [batch_size, width], dtype=float32
-    "default",         # Alias for "pooled_output" (aligns with other models).
+    "default",         # Alias for "pooled_output" (aligns with other model).
     "sequence_output"  # Shape [batch_size, seq_length, width], dtype=float32
     "encoder_outputs", # List of Tensors with outputs of all transformer layers.
   }
@@ -416,7 +416,7 @@ def export_preprocessing(export_path: Text,
 
 
 # TODO(b/175369555): Remove all workarounds for this bug of TensorFlow 2.4
-# when this bug is no longer a concern for publishing new models.
+# when this bug is no longer a concern for publishing new model.
 # TensorFlow 2.4 has a placement issue with Assert ops in tf.functions called
 # from Dataset.map() on a TPU worker. They end up on the TPU coordinator,
 # and invoking them from the TPU worker is either inefficient (when possible)

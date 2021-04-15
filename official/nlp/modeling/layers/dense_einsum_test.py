@@ -83,11 +83,11 @@ class DenseEinsumLayer(keras_parameterized.TestCase):
     output_tensor = activation_layer(input_tensor)
     activation_model = tf.keras.Model(input_tensor, output_tensor)
 
-    # Make sure the models' weights are identical.
+    # Make sure the model' weights are identical.
     activation_model.set_weights(no_activation_model.get_weights())
 
     # Predict using each model on the same input data. The output should be
-    # different, since one is using a softmax - even though the models' weights
+    # different, since one is using a softmax - even though the model' weights
     # are the same.
     input_values = 10 * np.random.random_sample((10, 4, 80))
     non_activated_data = no_activation_model.predict(input_values)

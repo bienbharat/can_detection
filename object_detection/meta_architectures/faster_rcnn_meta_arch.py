@@ -14,7 +14,7 @@
 # ==============================================================================
 """Faster R-CNN meta-architecture definition.
 
-General tensorflow implementation of Faster R-CNN detection models.
+General tensorflow implementation of Faster R-CNN detection model.
 
 See Faster R-CNN: Ren, Shaoqing, et al.
 "Faster R-CNN: Towards real-time object detection with region proposal
@@ -32,7 +32,7 @@ refined boxes and classes, and then features are pooled from the refined and
 non-maximum suppressed boxes and are passed through the box classifier again. If
 number of stages is 3 during training it will be reduced to two automatically.
 
-Implementations of Faster R-CNN models must define a new
+Implementations of Faster R-CNN model must define a new
 FasterRCNNFeatureExtractor and override three methods: `preprocess`,
 `_extract_proposal_features` (the first stage of the model), and
 `_extract_box_classifier_features` (the second stage of the model). Optionally,
@@ -2872,8 +2872,8 @@ class FasterRCNNMetaArch(model.DetectionModel):
     the num_classes parameter.
 
     Note that this function is intended to be used to restore Keras-based
-    models when running Tensorflow 2, whereas restore_map (above) is intended
-    to be used to restore Slim-based models when running Tensorflow 1.x.
+    model when running Tensorflow 2, whereas restore_map (above) is intended
+    to be used to restore Slim-based model when running Tensorflow 1.x.
 
     Args:
       fine_tune_checkpoint_type: whether to restore from a full detection

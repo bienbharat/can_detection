@@ -13,7 +13,7 @@
 # limitations under the License.
 # ==============================================================================
 
-r"""Code to download and parse the AVA Actions dataset for TensorFlow models.
+r"""Code to download and parse the AVA Actions dataset for TensorFlow model.
 
 The [AVA Actions data set](
 https://research.google.com/ava/index.html)

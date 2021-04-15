@@ -34,7 +34,7 @@ values between 0 and 255 are scaled by (1/128.0) and then a value of
 In quantized Mobilenet model, 'normalized_image_tensor' has values between [0,
 255].
 In general, see the `preprocess` function defined in the feature extractor class
-in the object_detection/models directory.
+in the object_detection/model directory.
 
 Outputs:
 If add_postprocessing_op is true: frozen graph adds a

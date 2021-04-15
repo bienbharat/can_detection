@@ -1054,7 +1054,7 @@ def result_dict_for_batched_example(images,
                 elems=[groundtruth_keypoints, original_image_spatial_shapes],
                 dtype=tf.float32))
 
-    # For class-agnostic models, groundtruth classes all become 1.
+    # For class-agnostic model, groundtruth classes all become 1.
     if class_agnostic:
       groundtruth_classes = groundtruth[input_data_fields.groundtruth_classes]
       groundtruth_classes = tf.ones_like(groundtruth_classes, dtype=tf.int64)

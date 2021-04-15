@@ -12,7 +12,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 # ==============================================================================
-"""Testing ResNet v2 models for the CenterNet meta architecture."""
+"""Testing ResNet v2 model for the CenterNet meta architecture."""
 import unittest
 import numpy as np
 import tensorflow.compat.v1 as tf

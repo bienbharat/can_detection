@@ -12,7 +12,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 # ==============================================================================
-"""Testing ResNet v1 FPN models for the CenterNet meta architecture."""
+"""Testing ResNet v1 FPN model for the CenterNet meta architecture."""
 import unittest
 from absl.testing import parameterized
 

@@ -36,7 +36,7 @@ class ResNetTest(parameterized.TestCase, tf.test.TestCase):
   )
   def test_network_creation(self, input_size, model_id,
                             endpoint_filter_scale):
-    """Test creation of ResNet family models."""
+    """Test creation of ResNet family model."""
     resnet_params = {
         18: 11190464,
         34: 21306048,
@@ -92,7 +92,7 @@ class ResNetTest(parameterized.TestCase, tf.test.TestCase):
   def test_resnet_rs(self, input_size, model_id, endpoint_filter_scale,
                      stem_type, se_ratio, init_stochastic_depth_rate,
                      depth_multiplier, resnetd_shortcut, replace_stem_max_pool):
-    """Test creation of ResNet family models."""
+    """Test creation of ResNet family model."""
     tf.keras.backend.set_image_data_format('channels_last')
     network = resnet.ResNet(
         model_id=model_id,

@@ -26,7 +26,7 @@ class EfficientNetTest(parameterized.TestCase, tf.test.TestCase):
 
   @parameterized.parameters(32, 224)
   def test_network_creation(self, input_size):
-    """Test creation of EfficientNet family models."""
+    """Test creation of EfficientNet family model."""
     tf.keras.backend.set_image_data_format('channels_last')
 
     network = efficientnet.EfficientNet(model_id='b0')

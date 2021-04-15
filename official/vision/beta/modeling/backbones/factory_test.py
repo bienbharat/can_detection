@@ -32,7 +32,7 @@ class FactoryTest(tf.test.TestCase, parameterized.TestCase):
   @combinations.generate(
       combinations.combine(model_id=[18, 34, 50, 101, 152],))
   def test_resnet_creation(self, model_id):
-    """Test creation of ResNet models."""
+    """Test creation of ResNet model."""
 
     network = backbones.ResNet(
         model_id=model_id, se_ratio=0.0, norm_momentum=0.99, norm_epsilon=1e-5)
@@ -60,7 +60,7 @@ class FactoryTest(tf.test.TestCase, parameterized.TestCase):
           se_ratio=[0.0, 0.25],
       ))
   def test_efficientnet_creation(self, model_id, se_ratio):
-    """Test creation of EfficientNet models."""
+    """Test creation of EfficientNet model."""
 
     network = backbones.EfficientNet(
         model_id=model_id,
@@ -94,7 +94,7 @@ class FactoryTest(tf.test.TestCase, parameterized.TestCase):
           filter_size_scale=[1.0, 0.75],
       ))
   def test_mobilenet_creation(self, model_id, filter_size_scale):
-    """Test creation of Mobilenet models."""
+    """Test creation of Mobilenet model."""
 
     network = backbones.MobileNet(
         model_id=model_id,
@@ -122,7 +122,7 @@ class FactoryTest(tf.test.TestCase, parameterized.TestCase):
 
   @combinations.generate(combinations.combine(model_id=['49'],))
   def test_spinenet_creation(self, model_id):
-    """Test creation of SpineNet models."""
+    """Test creation of SpineNet model."""
     input_size = 128
     min_level = 3
     max_level = 7
@@ -157,7 +157,7 @@ class FactoryTest(tf.test.TestCase, parameterized.TestCase):
   @combinations.generate(
       combinations.combine(model_id=[38, 56, 104],))
   def test_revnet_creation(self, model_id):
-    """Test creation of RevNet models."""
+    """Test creation of RevNet model."""
     network = backbones.RevNet(
         model_id=model_id, norm_momentum=0.99, norm_epsilon=1e-5)
 
@@ -180,7 +180,7 @@ class FactoryTest(tf.test.TestCase, parameterized.TestCase):
 
   @combinations.generate(combinations.combine(model_type=['resnet_3d'],))
   def test_resnet_3d_creation(self, model_type):
-    """Test creation of ResNet 3D models."""
+    """Test creation of ResNet 3D model."""
     backbone_cfg = backbones_3d_cfg.Backbone3D(type=model_type).get()
     temporal_strides = []
     temporal_kernel_sizes = []

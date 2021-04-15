@@ -31,7 +31,7 @@ class ResNet3DTest(parameterized.TestCase, tf.test.TestCase):
   )
   def test_network_creation(self, input_size, model_id, endpoint_filter_scale,
                             stem_type, se_ratio, init_stochastic_depth_rate):
-    """Test creation of ResNet3D family models."""
+    """Test creation of ResNet3D family model."""
     tf.keras.backend.set_image_data_format('channels_last')
     temporal_strides = [1, 1, 1, 1]
     temporal_kernel_sizes = [(3, 3, 3), (3, 1, 3, 1), (3, 1, 3, 1, 3, 1),

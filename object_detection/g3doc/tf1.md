@@ -30,7 +30,7 @@ docker run -it od
 ### Python Package Installation
 
 ```bash
-cd models/research
+cd model/research
 # Compile protos.
 protoc object_detection/protos/*.proto --python_out=.
 # Install TensorFlow Object Detection API.

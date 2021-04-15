@@ -41,7 +41,7 @@ flags.DEFINE_string("vocab_file", None,
 flags.DEFINE_bool(
     "do_lower_case", True,
     "Whether to lower case the input text. Should be True for uncased "
-    "models and False for cased models.")
+    "model and False for cased model.")
 
 flags.DEFINE_bool(
     "do_whole_word_mask", False,
@@ -59,7 +59,7 @@ flags.DEFINE_bool(
 
 flags.DEFINE_bool(
     "use_v2_feature_names", False,
-    "Whether to use the feature names consistent with the models.")
+    "Whether to use the feature names consistent with the model.")
 
 flags.DEFINE_integer("max_seq_length", 128, "Maximum sequence length.")
 

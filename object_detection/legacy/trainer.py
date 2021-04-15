@@ -220,7 +220,7 @@ def train(create_tensor_dict_fn,
           is_chief,
           train_dir,
           graph_hook_fn=None):
-  """Training function for detection models.
+  """Training function for detection model.
 
   Args:
     create_tensor_dict_fn: a function to create a tensor input dictionary.

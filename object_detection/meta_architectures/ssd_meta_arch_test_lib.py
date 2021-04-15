@@ -12,7 +12,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 # ==============================================================================
-"""Helper functions for SSD models meta architecture tests."""
+"""Helper functions for SSD model meta architecture tests."""
 
 import functools
 import tensorflow.compat.v1 as tf

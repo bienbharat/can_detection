@@ -13,7 +13,7 @@
 # limitations under the License.
 # ==============================================================================
 
-"""Provides functions to prefetch tensors to feed into models."""
+"""Provides functions to prefetch tensors to feed into model."""
 import tensorflow.compat.v1 as tf
 
 

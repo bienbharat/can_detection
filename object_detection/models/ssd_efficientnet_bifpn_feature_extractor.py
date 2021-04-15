@@ -776,7 +776,7 @@ class SSDEfficientNetB6BiFPNKerasFeatureExtractor(
     """SSD Keras EfficientNet-b6 BiFPN (EfficientDet-d[6,7]) Feature Extractor.
 
     SSD Keras EfficientNet-b6 BiFPN Feature Extractor, a.k.a. EfficientDet-d6
-    and EfficientDet-d7. The EfficientDet-d[6,7] models use the same backbone
+    and EfficientDet-d7. The EfficientDet-d[6,7] model use the same backbone
     EfficientNet-b6 and the same BiFPN architecture, and therefore have the same
     number of parameters. They only differ in their input resolutions.
 

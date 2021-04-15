@@ -13,7 +13,7 @@
 # limitations under the License.
 # ==============================================================================
 
-"""A wrapper around the MobileNet v2 models for Keras, for object detection."""
+"""A wrapper around the MobileNet v2 model for Keras, for object detection."""
 from __future__ import absolute_import
 from __future__ import division
 from __future__ import print_function

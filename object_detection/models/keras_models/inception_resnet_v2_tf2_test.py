@@ -18,7 +18,7 @@
 
 This test mainly focuses on comparing slim inception resnet v2 and Keras
 inception resnet v2 for object detection. To verify the consistency of the two
-models, we compare:
+model, we compare:
   1. Output shape of each layer given different inputs
   2. Number of global variables
 

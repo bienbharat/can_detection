@@ -28,7 +28,7 @@ from official.modeling.multitask import multitask
 
 @gin.configurable
 class MultiTaskEvaluator(orbit.AbstractEvaluator):
-  """Implements the common trainer shared for TensorFlow models."""
+  """Implements the common trainer shared for TensorFlow model."""
 
   def __init__(
       self,
@@ -36,7 +36,7 @@ class MultiTaskEvaluator(orbit.AbstractEvaluator):
       model: Union[tf.keras.Model, base_model.MultiTaskBaseModel],
       global_step: Optional[tf.Variable] = None,
       checkpoint_exporter: Optional[train_utils.BestCheckpointExporter] = None):
-    """Initialize common trainer for TensorFlow models.
+    """Initialize common trainer for TensorFlow model.
 
     Args:
       task: A multitask.MultiTask instance.

@@ -12,7 +12,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-"""Helper code to run complete models from within python."""
+"""Helper code to run complete model from within python."""
 
 import os
 import shutil

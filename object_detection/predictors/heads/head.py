@@ -15,7 +15,7 @@
 
 """Base head class.
 
-All the different kinds of prediction heads in different models will inherit
+All the different kinds of prediction heads in different model will inherit
 from this class. What is in common between all head classes is that they have a
 `predict` function that receives `features` as its first argument.
 
